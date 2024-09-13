@@ -1,4 +1,5 @@
 import math
+from tkinter import *
 """Things to include in Calculator:
         -arthimatic actions
         -finding area of shapes
@@ -51,10 +52,25 @@ def unit_circle(radian,trig):
 # finding x
 def finding_x(equation):
     pass
+def interface():
+    root = Tk()
+
+    root.title("Calculator")
+    root.geometry('800x600')
+    root.config(bg = 'light gray')
+    # button1 = Button(root, text=' 1 ', fg='black', bg='red', 
+    #                 command=lambda: press(1), height=1, width=7) 
+    # button1.grid(row=2, column=0) 
+ 
+    # button2 = Button(root, text=' 2 ', fg='black', bg='red', 
+    #                 command=lambda: press(2), height=1, width=7) 
+
+    root.mainloop()
 
 
 def main():
     print("This is the main method")
+    interface()
 # print(addition(3,4))
 # print(subtraction(3,4))
 # print(multiplication(3,4))
